@@ -20,7 +20,7 @@ ImageButton.MouseButton1Down:Connect(function()
     game:GetService("VirtualInputManager"):SendKeyEvent(true, Enum.KeyCode.End, false, game)
 end)
 
-local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/cuanbadboy/badboy-/refs/heads/main/menu"))()
 repeat wait() until game:IsLoaded()
 local Window = Fluent:CreateWindow({
     Title = "TBoy Roblox Tổng Hợp",
