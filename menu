@@ -1,0 +1,16 @@
+-- Lấy button
+local button = script.Parent
+
+-- Tùy chỉnh giao diện
+button.Text = "Bấm vào đây"
+button.Size = UDim2.new(0, 200, 0, 50)
+button.Position = UDim2.new(0.5, -100, 0.5, -25)
+button.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
+button.TextScaled = true
+
+-- Khi nhấn nút
+button.MouseButton1Click:Connect(function()
+    print("👉 Bạn đã bấm vào nút!")
+    button.Text = "Đã Bấm!"
+    button.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+end)
